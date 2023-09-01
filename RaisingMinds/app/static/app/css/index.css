@@ -1,6 +1,19 @@
-
 /* nav bar */
 /* logo  */
+.logo {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  color: #f3f5f8;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
 .size {
     width: 150px;
 }
