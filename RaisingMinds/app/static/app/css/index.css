@@ -1,4 +1,4 @@
-/* nav bar */
+
 /* logo  */
 .logo {
   display: flex;
@@ -31,7 +31,7 @@ a {
     font-weight:500;
   }
   .btn.btnDonate-style{
-    background: #068FFF;
+    background: #1964a2;
     border: 2px solid #068FFF;
     color: #fff;
     height: 35px;
@@ -214,6 +214,7 @@ a {
   
   /* button in home screen */
   .btn.btn-secondary {
+    position:absolute;
     background: #068FFF;
     border: 1px solid #068FFF;
     color: #fff;

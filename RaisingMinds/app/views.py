@@ -6,5 +6,5 @@ from django.shortcuts import render
 def index(request):
     return render(request,'app/index.html')
 
-def campagin(request):
-    return render(request,'app/campagin.html')
+def campaign(request):
+    return render(request,'app/campaign.html')
