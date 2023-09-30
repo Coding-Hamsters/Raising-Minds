@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campagin</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'app/css/index.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'app/css/Campagin.css' %}"/>
+
+</head>
+<body>
+     <!-- nav bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3 alwaysTop">
+        <div class="container">
+        <!-- Logo -->
+        <div class="fixedLogo">
+            <a href="#"><div class="logo" class="h-8 size bg-dark">Raising Minds</div></a>
+        </div>
+        <!-- Navbar toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse backGround" id="navbarCollapse">
+            <!-- Nav -->
+            <div class="navbar-nav mx-lg-auto">
+            <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
+            <a class="nav-item nav-link" href="#">Campagins</a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Get invloved</a>
+            </div>
+  
+            <!-- Donate button -->
+            <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+                <a href="#" class="btn btnDonate-style btn-sm btn-primary w-full w-lg-auto custom-btn">
+                Donate
+                </a>
+            </div>
+            </div>
+        </div>
+      </nav>
+      <!-- end of nav bar -->
+    
+</body>
+</html>
