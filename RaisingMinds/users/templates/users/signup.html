@@ -56,19 +56,22 @@
                 <span class="fa fa-user-plus"></span>
                 </div>
                 <h3 class="text-center mb-4">Sign Up</h3>
-                <form action="#" class="login-form">
+
+
+                <form action="#" class="login-form" method="post">
+                {% csrf_token %}
                 <div class="form-group">
-                    <input type="text" class="form-control rounded-left" placeholder="Username" required>
+                    <input type="text" class="form-control rounded-left" placeholder="Username" name="username" required>
                 </div>
 
                 <div class="form-group">
-                    <input type="email" class="form-control rounded-left" placeholder="Email" required>
+                    <input type="email" class="form-control rounded-left" placeholder="Email" name="email" required>
                 </div>
                 <div class="form-group d-flex">
-                    <input type="password" class="form-control rounded-left" placeholder="Password" required>
+                    <input type="password" class="form-control rounded-left" placeholder="Password" name="password1" required>
                 </div>
                 <div class="form-group d-flex">
-                    <input type="password" class="form-control rounded-left" placeholder="Confirm Password" required>
+                    <input type="password" class="form-control rounded-left" placeholder="Confirm Password" name="password2" required>
                 </div>
 
 
@@ -85,6 +88,8 @@
                     class="form-control btn btn-primary rounded submit px-3 signup-font p-2  ">
                     <i class="fab fa-google"></i>Sign Up with Google </button></a>
                 </form>
+
+
             </div>
             </div>
         </div>
