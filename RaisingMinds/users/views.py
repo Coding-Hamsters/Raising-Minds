@@ -2,7 +2,7 @@ from typing import Any
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import User
-from django.contrib.auth import login,logout
+from django.contrib.auth import login as user_login,logout,authenticate
 
 # Create your views here.
 def signup(request):
@@ -32,4 +32,18 @@ def signup(request):
     return render(request,'users/signup.html')
 
 def login(request):
+
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password1 = request.POST.get('password1')
+
+        user = authenticate(request,email = email,password = password1)
+
+        if user is not None:
+            user_login(request,user)
+            return redirect('home')
+
+        else:
+            return HttpResponse('<h1>password or email not correct</h1>')
+
     return render(request,'users/login.html')
