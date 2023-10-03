@@ -214,7 +214,7 @@ a {
   
   /* button in home screen */
   .btn.btn-secondary {
-    position:absolute;
+    
     background: #068FFF;
     border: 1px solid #068FFF;
     color: #fff;
