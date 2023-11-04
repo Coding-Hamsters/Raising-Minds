@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    
      <!-- nav bar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3 alwaysTop">
         <div class="container">
@@ -31,8 +32,8 @@
         <div class="collapse navbar-collapse backGround" id="navbarCollapse">
             <!-- Nav -->
             <div class="navbar-nav mx-lg-auto">
-            <a class="nav-item nav-link active" href="{% url 'index' %}" aria-current="page">Home</a>
-            <a class="nav-item nav-link" href="{% url 'campaign' %}">Campaigns</a>
+            <a class="nav-item nav-link " href="{% url 'index' %}" aria-current="page">Home</a>
+            <a class="nav-item nav-link active" href="{% url 'campaign' %}">Campaigns</a>
             <a class="nav-item nav-link" href="#">Features</a>
             <a class="nav-item nav-link" href="#">Get invloved</a>
             </div>
@@ -47,6 +48,37 @@
         </div>
       </nav>
       <!-- end of nav bar -->
-    
+      <div class="home-slider  homeSectionWords">
+        <div class="slider-item " style="background-image:url(/static/app/images/5.jpg);">
+            <div class="container">
+                <div class="column-1"></div>
+                <div class="column-2"></div>
+                <div class="column-3"></div>
+                <div class="column-4"></div>
+                <div class="heading ">
+                    <h1>RAISING MINDS</h1>
+                    <h1>CAMPAIGNS</h1>
+
+                   
+                </div>
+                <div class="Ctype text-center " >
+              <div class="Ctype1 border border-dashed border-primary ">
+                <p>On Going Campaigns</p></div>
+                <div class="Ctype2 border border-dashed border-primary">
+                <p>Up coming Campagins</p></div>
+                <div class="Ctype3 border border-dashed border-primary ">
+                 <p>Complete Campagins</p></div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+      
+          
+ 
+     
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
