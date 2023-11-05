@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/',user_views.signup,name='signup'),
     path('login/',user_views.login,name='login'),
-    path('',include('app.urls'))
+    path('',include('app.urls')),
+    path('activate/<uidb64>/<token>',user_views.activate,name='activate')
 ]
