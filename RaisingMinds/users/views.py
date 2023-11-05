@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from .models import User
 from django.contrib.auth import login as user_login,logout,authenticate
 
+from django.contrib.sites.shortcuts import get_current_site
+
 # Create your views here.
 def signup(request):
 
@@ -26,6 +28,10 @@ def signup(request):
                 newUser = User.objects.create_user(email,username,password1)
                 newUser.is_active = False
                 newUser.save()
+
+                # set up email comfimation to signup
+                # current_site = current_site(request)
+                # subject = "Confirm Your Email"
 
 
 
