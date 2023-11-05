@@ -1,5 +1,8 @@
+
+
+
 .heading{
-    margin-top: 120px;
+    margin-top: 200px;
     z-index: 1;
     position: relative;
     
@@ -14,8 +17,12 @@
     z-index: 1;
     
 }
+
+#onGoing,#upComing,#complete{
+    font-weight: 750;
+}
 .Ctype{
-    margin-top: 50px;
+    margin-top: 80px;
    display: flex; 
    font-family: poppins; 
    font-weight: 800;
@@ -47,7 +54,7 @@
     background-position: center center;  
 }
 .Ctype2{
-    background-image: url(/static/app/images/8.jpg);
+    background-image: url(/static/app/images/5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -56,17 +63,25 @@
     background-image: url(/static/app/images/12.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-
-    
+    background-position: center center;    
 }
-
 .Ctype1 p,.Ctype2 p,.Ctype3 p{
-    margin-top:45px;
-    
-   
+    margin-top:45px;   
 }
-@media (max-width: 768px) {
+.OCimg{
+    border: 1px black groove;
+    
+}
+
+
+@media (max-width: 987px) {
+    .Ctype1, .Ctype2, .Ctype3 {
+        height: 150px;
+            width:200px;
+       
+        }
+  }
+  @media (max-width: 1150px) {
     .Ctype1, .Ctype2, .Ctype3 {
         display: grid  !important;;
         margin-right: 10px;
@@ -121,8 +136,6 @@
         margin-right: 50px;
         display: grid !important;
         gap: 40px;
-      
-     
            
     }
     .Ctype1 p,.Ctype2 p,.Ctype3 p{
@@ -140,5 +153,47 @@
   }
 }
 
+/* sections */
+.Ctype a{
+    color: aliceblue;
+    -webkit-text-stroke: 0.9px black;
+    z-index: 1;
+}
+/*  campagins */
+@media (max-width: 510px) {
+    /* image in mobile view */
+    .OCimg{
+        width: 360px;   
+    }
+    .OCp{
+        margin-top: 0 !important;
+    }
+}
 
+.Pbox{
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px 1px black;
+}
 
+.btnCampagin{
+    background: #068FFF;
+    border: 2px solid #068FFF;
+    color: #fff;
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: -0px;
+    transition: all 1s ease;
+    padding-bottom: 20px;
+}
+.btnCampagin:hover{
+    background: #068FFF;
+    border: 2px solid #068FFF;
+    background: transparent;
+    color: #068FFF;
+    transition: all 1s ease;
+
+  }
