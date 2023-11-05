@@ -7,22 +7,27 @@ from django.contrib.auth import login as user_login,logout,authenticate
 # Create your views here.
 def signup(request):
 
+    # get the data from signup.html form
     if request.method == 'POST':
         username = request.POST.get('username')
         email = request.POST.get('email')
         password1 = request.POST.get('password1')
         password2 = request.POST.get('password2')
 
-        print(username,password1,email)
-
+        # check the password and confirm passwords are equal
         if password1 == password2:
 
+            # check the email is exists or not
             if User.objects.filter(email = email).exists():
                 return HttpResponse('email is exist!')
             
             else:
+                # create a new user
                 newUser = User.objects.create_user(email,username,password1)
+                newUser.is_active = False
                 newUser.save()
+
+
 
                 return redirect('login')
             
