@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # install custom apps
     'app',
     'users',
+    'user_profile'
 ]
 
 MIDDLEWARE = [
@@ -126,6 +129,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # mention that what is the auth user model
 AUTH_USER_MODEL = 'users.User'
+
+# set up media settings
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 # email settings
 EMAIL_USE_TLS = True  
