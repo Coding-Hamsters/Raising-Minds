@@ -24,7 +24,7 @@
 .Ctype{
     margin-top: 80px;
    display: flex; 
-   font-family: poppins; 
+   font-family: poppins !important; 
    font-weight: 800;
    font-size: 30px;
    -webkit-text-stroke: 0.9px black;
